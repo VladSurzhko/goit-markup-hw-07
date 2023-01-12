@@ -34,8 +34,8 @@ others{
 
 
  .container{
-min-width: 396px;
-max-width: 480px;
+min-width: 428px;
+
 padding-right: 16px;
 padding-left: 16px;
 margin-left: auto;
@@ -47,16 +47,16 @@ margin-right: auto;
  /* tablet screen */
  @media screen and (min-width: 768px) {
    .container{
-   max-width: 768px;
+   max-width: 768px
    }
  }
  /* desktop screen */
  @media screen and (min-width:1200px) {
   .container{
-   max-width: 1128px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+   max-width:1158px;
+   padding-right: 15px;
+   padding-left: 15px;
+   display: grid;
    /* max-width: 1128px;
    padding-right: 156px;
    padding-left: 156px; */
@@ -595,21 +595,61 @@ fill:currentColor;
 background:  var(--gray-color);
 padding-top: 100px;
 padding-bottom: 100px;
+height: 662px;
  }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+   .logo{
+   background:  var(--gray-color);
+   padding-top: 100px;
+   padding-bottom: 100px;   
+}
+}
  .footer{
    display: flex;
+   flex-direction: column;
+ }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+.footer{
+   display: flex; 
+   flex-direction: row;  
+}   
+}
+ .footer-logo-text{
+  
  }
 
  .footer-logo{
-    margin-bottom: 16px;
-    display: block;
+color: #F4F4FD;
+font-family: Raleway, sans-serif;
+
+ }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+.footer-logo{
+margin-bottom: 16px;
+display: block;
 font-weight: 800;
 font-size: 18px;
 line-height: calc(21/18);
 color: #F4F4FD;
 font-family: Raleway, sans-serif
+}
+}
 
- }
  .footer-web{
 font-weight: 800;
 font-size: 18px;
@@ -623,19 +663,44 @@ font-size: 16px;
 line-height: calc(24/16);
 color: var(--bage-color);
 width: 264px;
-margin: 0;
+
  }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+   .footer-info{
+   font-size: 16px;
+   line-height: calc(24/16);
+   color: var(--bage-color);
+   width: 264px;
+   margin: 0;   
+}
+}
  .footer-soc-media{
    margin-left: 120px;
  }
  .social{
-   font-weight: 600;
+   font-weight: 500;
    font-size: 16px;
    line-height: 24px;
-   margin: 0;
-    margin-bottom: 16px;
     color: var(--white-color);
  }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+   .social{
+   font-weight: 600;
+   margin: 0;
+    margin-bottom: 16px;
+    color: var(--white-color);   
+}
+}
  .footer-soc-item{
    display: flex;
    padding: 0;
@@ -662,15 +727,17 @@ margin: 0;
    display: flex;
  }
  .footer-link{
-   width: 40px;
-   height: 40px;
+width: 40px;
+height: 40px;
 margin: 0;
 margin-right: 16px;
 transition: color var(--overlay-time);
  }
+ @media screen and(min-width:1200px) {
  .footer-link :last-child{
    margin: 0;
  }
+}
 
 /*Subsribe*/
 
