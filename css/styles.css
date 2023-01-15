@@ -53,10 +53,10 @@ margin-right: auto;
  /* desktop screen */
  @media screen and (min-width:1200px) {
   .container{
-   max-width:1158px;
+   max-width:1128px;
    padding-right: 15px;
    padding-left: 15px;
-   display: grid;
+   /* display: grid; */
    /* max-width: 1128px;
    padding-right: 156px;
    padding-left: 156px; */
@@ -184,13 +184,25 @@ padding-bottom: 192px
 
 .section-text{
 color: var(--white-color);
-font-weight: 500;
-font-size: 56px;
-line-height:calc(60/56);
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
 text-align: center;
 margin: 0;
-
  }
+ /* tablet screen */
+ @media screen and (min-width: 768px) {
+   
+ }
+ /* desktop screen */
+ @media screen and (min-width:1200px){
+.section-text{
+   font-weight: 500;
+   font-size: 56px;
+   line-height:calc(60/56);
+   text-align: center;
+}
+}
  .section-button{
 font-family: inherit;
 font-weight: 500;
@@ -200,7 +212,7 @@ background: var(--blue-color);
 color: var(--white-color);
 cursor: pointer;
 padding: 16px 32px;
-margin: 48px auto 0;
+margin: 72px auto 0;
 display: block;
 border: none;
 border-radius: 4px;
@@ -213,6 +225,16 @@ transition: color var(--overlay-time);
  .section-button:focus{
     color: var(--white-color);
     background: #404BBF;
+ }
+ /* tablet screen */
+ @media screen and (min-width: 768px) {
+   
+ }
+ /* desktop screen */
+ @media screen and (min-width:1200px){
+ .section-button{
+   margin: 48px auto 0;  
+ }  
  }
 
 
@@ -227,7 +249,8 @@ transition: color var(--overlay-time);
    flex-direction: column;
    align-items: flex-start;
    padding: 0px;
-   
+   margin-top: 96px;
+   margin-bottom: 96px;  
  }
 /* tablet screen */
  @media screen and (min-width: 768px) {
@@ -251,11 +274,23 @@ transition: color var(--overlay-time);
  }
 }
  .about{
-    margin-right: 24px;
+    margin-bottom: 72px;
  }
  .about :last-child{
 margin-right: 0px;
+margin-bottom: 0px;
 }
+/* tablet screen */
+@media screen and (min-width: 768px) {
+   
+       }
+    /* desktop screen */
+    @media screen and (min-width:1200px){
+   .about{
+      margin: 0;
+      margin-right: 24px;  
+   }   
+    }
  
  .text-top{
 font-weight: 700;
@@ -263,6 +298,7 @@ font-size: 36px;
 line-height: 40px;
 color: #2E2F42;
 text-align: center;
+margin: 0;
    
  }
  /* tablet screen */
@@ -437,8 +473,17 @@ line-height:calc(40/36) ;
 color: var(--gray-color);
 text-align: center;
 margin: 0;
-margin-bottom: 72px;
  }
+ /* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+.team-title{
+margin-bottom: 72px;   
+}   
+}
 
  .team{
    background-color:  #F4F4FD;
@@ -500,6 +545,21 @@ margin-right: 0;
    padding-top: 120px;
    padding-bottom: 120px;
 }
+/* tablet screen */
+@media screen and (min-width: 768px) {
+ 
+}
+/* desktop screen */
+@media screen and (min-width:1200px){
+.customers{
+display: flex;
+flex-direction: column;
+margin-left: 156px;
+margin-right: 156px;   
+}
+}  
+
+   
 .customers-text{
 text-align: center;
 font-weight: 700;
@@ -526,6 +586,7 @@ padding: 0;
    margin: 0;
    padding: 0;
    justify-content: center;
+   flex-wrap: nowrap;
 }
 }
 
@@ -735,11 +796,11 @@ width: 264px;
 }
 }
  .footer-soc-item{
-   display: flex;
+display: flex;
 flex-direction: row;
-align-items: flex-start;
-   padding: 0;
-   margin: 0;
+justify-content: center;
+padding: 0;
+margin: 0;
  }
  /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -813,6 +874,8 @@ transition: color var(--overlay-time);
    font-weight: 500;
 font-size: 16px;
 color: #FFFFFF;
+display: flex;
+justify-content: center;
 }
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -826,11 +889,13 @@ color: #FFFFFF;
    font-weight: 500;
 font-size: 16px;
 color: #FFFFFF;
+justify-content: flex-start;
 }   
  }
 .footer-form{
    display: flex;
    flex-direction: column;
+   align-items: center;
 }
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -852,6 +917,7 @@ outline: none;
 color: var(--white-color);
 background-color: transparent;
 padding-left: 16px;
+margin-bottom: 16px;
 }
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -861,6 +927,7 @@ padding-left: 16px;
  @media screen and (min-width:1200px){
 .footer-input{
    width: 264px;
+   margin: 0;
 }   
  }
 
@@ -897,7 +964,7 @@ margin-left: 24px;
 border: none;
 cursor: pointer;
 transition: background-color var(--overlay-time),
-    box-shadow var(--overlay-time);
+box-shadow var(--overlay-time);
 }
 .footer-btn :hover{
    background: #404BBF;
