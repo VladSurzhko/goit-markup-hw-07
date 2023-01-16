@@ -31,6 +31,26 @@
                   <a class="contact link" href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
               </li>
           </ul>
+          <!-- mobile-menu-button -->
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         </div>
       </header>
     <main>
@@ -433,7 +453,81 @@
             </form>
         </div>
     </div>
+    
+    <!-- Mobile-menu -->
+    <div class="menu container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li class="mobile-list">
+            <a href="" class="mobile-link link">Studio</a>
+        </li>
+          <li class="mobile-list">
+            <a href="" class="mobile-link link">Portfolio</a>
+        </li>
+          <li class="mobile-list">
+            <a href="" class="mobile-link link">Contacts</a>
+        </li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts-link">
+                <a class="mobile-contacts-tel link" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-link">
+                <a class="mobile-contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-soc-list list">
+            <li class="mobile-soc-item">
+            <a href="#" class="mobile-icons-link instagram">
+                <svg class="mobile-link">
+                    <use href="./img/icons-team.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="mobile-soc-item">
+            <a href="#" class="mobile-icons-link twitter">
+                <svg class="mobile-link">
+                    <use href="./img/icons-team.svg#icon-twitter"></use> 
+                </svg>    
+            </a>
+            </li>
+            <li class="mobile-soc-item">
+            <a href="#"class="mobile-icons-link facebook ">
+                <svg class="mobile-link">
+                    <use href="./img/icons-team.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="mobile-soc-item">
+                <a href="#"class="mobile-icons-link linkedin">
+                    <svg class="mobile-link">
+                        <use href="./img/icons-team.svg#icon-linkedin"></use>
+                    </svg>      
+                </a>
+            </li>
+            
+        </ul>
+
+      </div>
+    
+    
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
