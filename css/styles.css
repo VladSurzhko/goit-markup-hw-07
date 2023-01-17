@@ -64,7 +64,8 @@ width:1158px;
  }
 
  .top-line{
-   box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
+position: relative;
+box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
  }
  .top-line nav,
 .top-line ul{
@@ -1356,7 +1357,7 @@ transition: background-color var(--overlay-time),
 /* Mobile-menu */
 
 .menu{
-   /* position: fixed; */
+position: relative;
 display: flex;
 flex-direction: column;
 height: 796px;
@@ -1483,9 +1484,9 @@ margin-right: 0px;
    height: 24px;
 }
 .mobile-close-menu{
-   /* position: absolute; */
-   top: 24px;
-   right: 24px;
+   position: absolute;
+   top: 48px;
+   right: 48px;
    width: 24px;
 height: 24px;
 display: flex;
@@ -1502,22 +1503,20 @@ margin-bottom: 16px;
 }
 
 .menu-toggle{
-   position: absolute;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   left: 4.21%;
-   right: 3.48%;
-   top: 6.49%;
-   bottom: 8.89%;
    margin: 0;
-   padding-top: 25px;
-   padding-right: 17px;
-   background-color: transparent;
-   cursor: pointer;
-   border: none;
-   border-radius: 50%;
-   outline: none;
+   position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    width: 32px;
+    height: 22px;
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
