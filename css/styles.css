@@ -1605,9 +1605,7 @@ transition: background-color var(--overlay-time),
     .menu.is-open {
       transform: translateX(0);
     }
-    .menu-toggle {
-
-    }
+    
 .mobile-menu{
 width: 151px;
 height: 200px;
@@ -1718,7 +1716,12 @@ cursor: pointer;
 transition: color var(--overlay-time);
 margin-left: 364px;
 margin-bottom: 16px;
-
+}
+.mobile-close-menu:hover,
+.mobile-close-menu:focus{
+color: #FFFFFF;
+ background-color: var(--blue-color);
+ fill: currentColor;  
 }
 
 .menu-toggle{
@@ -1739,7 +1742,7 @@ margin-bottom: 16px;
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color:transparent;
 }
 /* tablet screen */
 @media screen and (min-width: 768px) {
