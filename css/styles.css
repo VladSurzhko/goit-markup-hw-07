@@ -306,44 +306,15 @@ padding-bottom: 192px;
 }
 
 /* sreen tablet */
-@media screen and (min-width:480px) and 
+@media screen and (min-width:320px) and 
 (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
+(min-width:320px) and (min-resolution: 192dpi),
+(min-width:320px) and (min-resolution: 2dppx){
   .section{
    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-mobile@2x.jpg);
   } 
   }
-/* @media screen and (max-width:480px){
-   .section{
-      background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-tablet@1x.jpg) ;   
-   }
-} */
-/* @media screen and (max-width:480px) and
-(min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-  .section{
-   background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-tablet@2x.jpg) ;
-  } 
-  } */
 
-
-  /* @media screen and (max-width:768px){
-   .section{
-      background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-desktop@1x.jpg) ;   
-   }
-} */
-/* @media screen and (min-width:768px) and
-(min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-  .section{
-   background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-desktop@2x.jpg);
-  } 
-  } */
-
-  
 
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -355,8 +326,8 @@ background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),ur
 }
 @media screen and (min-width:768px) and
 (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
+(min-width:768px) and (min-resolution: 192dpi),
+(min-width:768px) and (min-resolution: 2dppx){
   .section{
    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-tablet@2x.jpg);
   } 
@@ -373,8 +344,8 @@ padding-bottom: 188px;
 }
 @media screen and (min-width:1200px) and
 (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
+(min-width:1200px) and (min-resolution: 192dpi),
+(min-width:1200px) and (min-resolution: 2dppx){
   .section{
    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-desktop@2x.jpg);
   } 
@@ -1207,7 +1178,7 @@ flex-direction: row;
 }   
  }
 .footer-input{
-   width: 396px;
+   width: 310px;
    height: 40px;
    border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1218,6 +1189,7 @@ background-color: transparent;
 padding-left: 16px;
 margin-bottom: 16px;
 }
+
 @media screen and (mi-width:468px) {
 .footer-input{
 width: 396px;
@@ -1446,7 +1418,7 @@ padding: 40px 32px 164px;
 
  .modal{
    position: absolute;
-    width: 408px;
+    width: 300px;
     left: 50%;
     top: 88px;
     padding: 24px;
@@ -1456,6 +1428,36 @@ padding: 40px 32px 164px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+ }
+ @media  screen and (min-width: 468px) {
+   .modal{
+      position: absolute;
+       width: 392px;
+       left: 50%;
+       top: 88px;
+       padding: 24px;
+       padding-top: 72px;
+       margin: 0;
+       transform: translateX(-50%);
+       background: #FCFCFC;
+       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+       border-radius: 4px;
+    }   
+ }
+ @media  screen and (min-width: 768px) {
+   .modal{
+      position: absolute;
+       width: 408px;
+       left: 50%;
+       top: 88px;
+       padding: 24px;
+       padding-top: 72px;
+       margin: 0;
+       transform: translateX(-50%);
+       background: #FCFCFC;
+       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+       border-radius: 4px;
+    }   
  }
  .modal-btn{
    position: absolute;
