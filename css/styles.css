@@ -301,8 +301,8 @@ line-height: calc(24 / 16)
 background-size: cover;
 background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../img/for-mobile/hero-bg-mobile@1x.jpg);
 margin: 0 auto;
-padding-top: 192px;
-padding-bottom: 192px;
+padding-top: 112px;
+padding-bottom: 112px;
 }
 
 /* sreen tablet */
@@ -1724,6 +1724,10 @@ color: #404BBF;
 .mobile-link:focus{
    color: #404BBF;   
    }
+.mobile-contacts-list{
+margin: 0px;   
+}
+
 .mobile-contacts{
    display: flex;
    flex-direction: column;
